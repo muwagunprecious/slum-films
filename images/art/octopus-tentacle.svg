@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800">
+  <defs>
+    <linearGradient id="warmYellowBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffd500"/>
+      <stop offset="60%" stop-color="#ffb703"/>
+      <stop offset="100%" stop-color="#fb8500"/>
+    </linearGradient>
+    <linearGradient id="tentaclePink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="40%" stop-color="#e11d48"/>
+      <stop offset="80%" stop-color="#be123c"/>
+      <stop offset="100%" stop-color="#881337"/>
+    </linearGradient>
+    <radialGradient id="cupInner" cx="40%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#fda4af"/>
+      <stop offset="50%" stop-color="#e11d48"/>
+      <stop offset="100%" stop-color="#4c0519"/>
+    </radialGradient>
+    <filter id="softGlow">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="rgba(190,18,60,0.4)"/>
+    </filter>
+  </defs>
+
+  <!-- Warm Yellow Background -->
+  <rect width="600" height="800" rx="24" fill="url(#warmYellowBg)"/>
+
+  <!-- 3D CGI Octopus Tentacle Curving Upwards -->
+  <g filter="url(#softGlow)">
+    <!-- Main Tentacle Body -->
+    <path d="M 450,800 C 400,600 320,400 350,220 C 370,120 440,60 480,80 C 510,95 500,160 450,200 C 400,240 370,350 430,550 C 460,650 520,720 560,800 Z" fill="url(#tentaclePink)"/>
+
+    <!-- Suction Cups Along the Left Edge -->
+    <!-- Cup 1 (Top Tip) -->
+    <ellipse cx="445" cy="115" rx="14" ry="18" fill="url(#cupInner)" stroke="#f43f5e" stroke-width="3" transform="rotate(-30 445 115)"/>
+    <!-- Cup 2 -->
+    <ellipse cx="415" cy="155" rx="18" ry="22" fill="url(#cupInner)" stroke="#f43f5e" stroke-width="4" transform="rotate(-25 415 155)"/>
+    <!-- Cup 3 -->
+    <ellipse cx="375" cy="205" rx="22" ry="28" fill="url(#cupInner)" stroke="#f43f5e" stroke-width="4.5" transform="rotate(-15 375 205)"/>
+    <!-- Cup 4 -->
+    <ellipse cx="340" cy="275" rx="26" ry="34" fill="url(#cupInner)" stroke="#f43f5e" stroke-width="5" transform="rotate(-5 340 275)"/>
+    <!-- Cup 5 -->
+    <ellipse cx="320" cy="355" rx="30" ry="38" fill="url(#cupInner)" stroke="#f43f5e" stroke-width="5" transform="rotate(10 320 355)"/>
+    <!-- Cup 6 -->
+    <ellipse cx="325" cy="445" rx="34" ry="42" fill="url(#cupInner)" stroke="#f43f5e" stroke-width="5.5" transform="rotate(20 325 445)"/>
+    <!-- Cup 7 -->
+    <ellipse cx="350" cy="545" rx="38" ry="46" fill="url(#cupInner)" stroke="#f43f5e" stroke-width="6" transform="rotate(25 350 545)"/>
+    <!-- Cup 8 -->
+    <ellipse cx="395" cy="650" rx="42" ry="50" fill="url(#cupInner)" stroke="#f43f5e" stroke-width="6.5" transform="rotate(30 395 650)"/>
+    <!-- Cup 9 (Bottom) -->
+    <ellipse cx="450" cy="755" rx="46" ry="54" fill="url(#cupInner)" stroke="#f43f5e" stroke-width="7" transform="rotate(35 450 755)"/>
+  </g>
+</svg>

@@ -1,14 +1,14 @@
 /* ==========================================================================
    SLUMFILMS — OFFICIAL 3D ANIMATION CINEMA & FILMS PORTAL
-   Exact Match to Illumination Design System:
-   - Solid Bright Yellow (#ffea00) "Our films" Section
+   Refined, Stylish Modern Typography (Plus Jakarta Sans & Inter)
+   - Signature Yellow (#ffea00) "Our films" Section
    - Clean White Character Showcase Section
-   - Big Full-Bleed 3D Animation Movie Tiles (border-radius: 20px, clean shadow)
+   - Full-Bleed 3D Animation Visual Cards (border-radius: 20px, soft shadow)
    - Floating Yellow Circle Hamburger Menu Button (top-right)
-   - Real 3D Animation YouTube Trailers
+   - Cinematic 3D Hero Animation Banner
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
   --color-yellow: #ffea00;
@@ -16,13 +16,14 @@
   --color-black: #000000;
   --color-white: #ffffff;
   --color-dark-bg: #000000;
-  --color-surface-dark: #0d0d0d;
+  --color-surface-dark: #0a0a0a;
   --color-border-dark: #222222;
   --color-text-main: #ffffff;
   --color-text-muted: #9ca3af;
   --color-text-dim: #6b7280;
 
-  --font-base: 'Montserrat', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  /* Stylish, Refined Font Stack */
+  --font-main: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 /* ==================== BASE RESET ==================== */
@@ -33,7 +34,7 @@
 }
 
 html {
-  font-family: var(--font-base);
+  font-family: var(--font-main);
   background-color: var(--color-dark-bg);
   color: var(--color-text-main);
   scroll-behavior: smooth;
@@ -43,14 +44,14 @@ html {
 body {
   background-color: var(--color-dark-bg);
   color: var(--color-text-main);
-  font-family: var(--font-base);
+  font-family: var(--font-main);
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.6;
   overflow-x: hidden;
   min-height: 100vh;
 }
 
-img, iframe, video {
+img, video {
   max-width: 100%;
   display: block;
 }
@@ -83,25 +84,25 @@ button {
   top: 24px;
   right: 32px;
   z-index: 2000;
-  width: 52px;
-  height: 52px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background-color: var(--color-yellow);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 4.5px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.28);
+  gap: 4px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.22);
   border: none;
   cursor: pointer;
   transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .floating-yellow-menu:hover {
-  transform: scale(1.1);
+  transform: scale(1.08);
   background-color: var(--color-yellow-hover);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.32);
 }
 
 .floating-yellow-menu:active {
@@ -109,8 +110,8 @@ button {
 }
 
 .floating-yellow-menu .bar {
-  width: 22px;
-  height: 2.8px;
+  width: 20px;
+  height: 2.4px;
   background-color: #000000;
   border-radius: 2px;
 }
@@ -137,7 +138,7 @@ button {
 }
 
 .header-spacer {
-  width: 52px;
+  width: 50px;
 }
 
 .slum-brand {
@@ -148,17 +149,17 @@ button {
 }
 
 .brand-title {
-  font-size: 26px;
-  font-weight: 900;
-  letter-spacing: 8px;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 6px;
   color: #ffffff;
   text-transform: uppercase;
 }
 
 .brand-sub {
   font-size: 9px;
-  font-weight: 800;
-  letter-spacing: 3px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
   color: var(--color-yellow);
   margin-top: 2px;
   text-transform: uppercase;
@@ -179,8 +180,8 @@ button {
   position: absolute;
   top: 28px;
   right: 36px;
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -197,13 +198,13 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 36px;
+  gap: 32px;
 }
 
 .overlay-link {
-  font-size: 38px;
-  font-weight: 900;
-  letter-spacing: 1px;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
   color: #ffffff;
   text-transform: uppercase;
   transition: color 0.2s ease, transform 0.2s ease;
@@ -211,12 +212,12 @@ button {
 
 .overlay-link:hover {
   color: var(--color-yellow);
-  transform: scale(1.05);
+  transform: scale(1.04);
 }
 
-/* ==================== HERO SECTION (REAL 3D ANIMATION TRAILER) ==================== */
+/* ==================== HERO SECTION (CINEMATIC 3D ANIMATION BANNER) ==================== */
 .hero-section {
-  padding: 24px 0 60px;
+  padding: 24px 0 40px;
   background-color: var(--color-dark-bg);
 }
 
@@ -226,168 +227,58 @@ button {
   padding: 0 40px;
 }
 
-.media-container {
-  position: relative;
+.hero-banner-wrap {
   width: 100%;
-  aspect-ratio: 16/9;
-  max-height: 620px;
-  border-radius: 20px;
+  aspect-ratio: 16/7;
+  max-height: 600px;
+  border-radius: 28px;
   overflow: hidden;
-  background-color: #000000;
-  margin-bottom: 24px;
+  background-color: #050505;
   border: 1px solid var(--color-border-dark);
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.95);
+  position: relative;
 }
 
-.hero-video-iframe {
+.hero-banner-img {
   width: 100%;
   height: 100%;
-  border: none;
-  display: block;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Video Channel Pills */
-.video-channel-pills {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 24px;
-  flex-wrap: wrap;
-}
-
-.channel-pill {
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  padding: 10px 20px;
-  border-radius: 9999px;
-  border: 1px solid var(--color-border-dark);
-  background-color: var(--color-surface-dark);
-  color: var(--color-text-muted);
-  transition: all 0.2s ease;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.channel-pill:hover {
-  border-color: #ffffff;
-  color: #ffffff;
-}
-
-.channel-pill.active {
-  background-color: var(--color-yellow);
-  color: #000000;
-  border-color: var(--color-yellow);
-  font-weight: 900;
-}
-
-.hero-text-block {
-  max-width: 900px;
-}
-
-.hero-tag {
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--color-yellow);
-  display: block;
-  margin-bottom: 8px;
-}
-
-.hero-title {
-  font-size: 64px;
-  font-weight: 900;
-  letter-spacing: -1px;
-  line-height: 1.08;
-  color: #ffffff;
-  text-transform: uppercase;
-  margin-bottom: 16px;
-}
-
-.hero-desc {
-  font-size: 16px;
-  line-height: 26px;
-  color: var(--color-text-muted);
-  margin-bottom: 28px;
-}
-
-.hero-btn-row {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.pill-btn {
-  border-radius: 9999px;
-  padding: 16px 36px;
-  font-size: 13.3333px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.22s ease;
-}
-
-.btn-primary {
-  background-color: #ffffff;
-  color: #000000;
-  border: 1px solid transparent;
-}
-
-.btn-primary:hover {
-  background-color: var(--color-yellow);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(255, 234, 0, 0.35);
-}
-
-.btn-secondary {
-  background-color: transparent;
-  color: #ffffff;
-  border: 1.5px solid #ffffff;
-}
-
-.btn-secondary:hover {
-  background-color: #ffffff;
-  color: #000000;
-  transform: translateY(-2px);
+.hero-banner-wrap:hover .hero-banner-img {
+  transform: scale(1.02);
 }
 
 /* ==========================================================================
-   "OUR FILMS" YELLOW SECTION (MATCHING SCREENSHOT 1)
+   "OUR FILMS" YELLOW SECTION (EXACT MATCH TO SCREENSHOT 1)
    ========================================================================== */
 .illum-yellow-films-section {
   background-color: var(--color-yellow);
   color: #000000;
-  padding: 90px 0 120px;
+  padding: 80px 0 110px;
   position: relative;
 }
 
 .yellow-section-header {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 48px;
 }
 
 .yellow-title {
-  font-family: var(--font-base);
-  font-size: 76px;
-  font-weight: 900;
-  letter-spacing: -2px;
+  font-family: var(--font-main);
+  font-size: 56px;
+  font-weight: 600;
+  letter-spacing: -1px;
   color: #000000;
-  line-height: 1.05;
-  margin-bottom: 12px;
+  line-height: 1.1;
 }
 
-/* Big Full-Bleed 3D Movie Visual Tiles */
+/* Staggered & Full-Bleed 3D Visual Cards Grid */
 .films-staggered-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 36px;
+  gap: 32px;
 }
 
 .film-tile-card {
@@ -398,17 +289,22 @@ button {
 }
 
 .film-tile-card:hover {
-  transform: translateY(-12px);
+  transform: translateY(-10px);
 }
 
 .film-poster-wrap {
   width: 100%;
-  aspect-ratio: 2/3;
-  border-radius: 24px;
+  aspect-ratio: 3/4;
+  border-radius: 20px;
   overflow: hidden;
-  background-color: #121212;
-  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.26);
+  background-color: #ffffff;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.16);
   position: relative;
+  transition: box-shadow 0.3s ease;
+}
+
+.film-tile-card:hover .film-poster-wrap {
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.24);
 }
 
 .film-poster-img {
@@ -419,62 +315,61 @@ button {
 }
 
 .film-tile-card:hover .film-poster-img {
-  transform: scale(1.06);
+  transform: scale(1.04);
 }
 
 .film-tile-info {
-  margin-top: 16px;
+  margin-top: 14px;
   display: flex;
   flex-direction: column;
   gap: 2px;
 }
 
 .film-tile-title {
-  font-size: 22px;
-  font-weight: 900;
+  font-size: 18px;
+  font-weight: 600;
   color: #000000;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.3px;
 }
 
 .film-tile-meta {
   font-size: 13px;
-  font-weight: 700;
-  color: rgba(0, 0, 0, 0.7);
-  text-transform: uppercase;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.65);
 }
 
 /* ==========================================================================
-   CLEAN WHITE CHARACTER SHOWCASE (MATCHING SCREENSHOT 2)
+   CLEAN WHITE CHARACTER SHOWCASE (EXACT MATCH TO SCREENSHOT 2)
    ========================================================================== */
 .illum-white-characters-section {
   background-color: #ffffff;
   color: #000000;
-  padding: 100px 0 120px;
+  padding: 90px 0 110px;
 }
 
 .white-section-header {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 48px;
 }
 
 .white-section-header h3 {
-  font-size: 52px;
-  font-weight: 900;
-  letter-spacing: -1.5px;
+  font-size: 42px;
+  font-weight: 600;
+  letter-spacing: -0.8px;
   color: #000000;
 }
 
 .characters-duo-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 36px;
   align-items: stretch;
 }
 
 .duo-card {
-  border-radius: 24px;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.10);
   background-color: #f8fafc;
   display: flex;
   flex-direction: column;
@@ -483,8 +378,8 @@ button {
 }
 
 .duo-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 28px 65px rgba(0, 0, 0, 0.22);
+  transform: translateY(-8px);
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.16);
 }
 
 .duo-img-box {
@@ -502,34 +397,34 @@ button {
 }
 
 .duo-card:hover .duo-img-box img {
-  transform: scale(1.05);
+  transform: scale(1.04);
 }
 
 .duo-content {
-  padding: 32px;
+  padding: 28px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
   background-color: #ffffff;
 }
 
 .duo-tag {
   font-size: 11px;
-  font-weight: 900;
-  letter-spacing: 2px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
   color: #d97706;
 }
 
 .duo-title {
-  font-size: 28px;
-  font-weight: 900;
+  font-size: 22px;
+  font-weight: 600;
   color: #000000;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.3px;
 }
 
 .duo-desc {
-  font-size: 15px;
+  font-size: 14.5px;
   line-height: 24px;
   color: #4b5563;
 }
@@ -539,57 +434,93 @@ button {
    ========================================================================== */
 .studio-section {
   background-color: #080808;
-  padding: 100px 0;
+  padding: 90px 0;
   border-top: 1px solid var(--color-border-dark);
 }
 
 .studio-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 36px;
+  gap: 32px;
 }
 
 .studio-card {
   background-color: #121212;
   border: 1px solid var(--color-border-dark);
-  border-radius: 24px;
-  padding: 48px;
+  border-radius: 20px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 14px;
   transition: border-color 0.2s ease, transform 0.2s ease;
 }
 
 .studio-card:hover {
-  border-color: #444444;
+  border-color: #383838;
   transform: translateY(-4px);
 }
 
 .studio-eyebrow {
   font-size: 11px;
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: 2px;
   color: var(--color-yellow);
   text-transform: uppercase;
 }
 
 .studio-card h3 {
-  font-size: 32px;
-  font-weight: 900;
+  font-size: 26px;
+  font-weight: 600;
   color: #ffffff;
 }
 
 .studio-card p {
-  font-size: 15px;
-  line-height: 26px;
+  font-size: 14.5px;
+  line-height: 24px;
   color: var(--color-text-muted);
+}
+
+.pill-btn {
+  border-radius: 9999px;
+  padding: 14px 32px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-yellow);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1.5px solid #ffffff;
+}
+
+.btn-secondary:hover {
+  background-color: #ffffff;
+  color: #000000;
+  transform: translateY(-2px);
 }
 
 /* ==================== FOOTER ==================== */
 .illum-footer {
   background-color: #000000;
   border-top: 1px solid #1a1a1a;
-  padding: 60px 0 80px;
+  padding: 50px 0 70px;
 }
 
 .footer-wrapper {
@@ -606,19 +537,19 @@ button {
 .footer-brand {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 3px;
 }
 
 .footer-links {
   display: flex;
-  gap: 28px;
+  gap: 24px;
   flex-wrap: wrap;
 }
 
 .footer-link {
   font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 1px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
   color: var(--color-text-dim);
   transition: color 0.2s ease;
 }
@@ -642,12 +573,12 @@ button {
 
 .modal-box {
   background-color: #121212;
-  border-radius: 24px;
+  border-radius: 20px;
   border: 1px solid #333333;
-  max-width: 840px;
+  max-width: 800px;
   width: 100%;
   display: grid;
-  grid-template-columns: 340px 1fr;
+  grid-template-columns: 320px 1fr;
   position: relative;
   overflow: hidden;
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.95);
@@ -657,8 +588,8 @@ button {
   position: absolute;
   top: 16px;
   right: 16px;
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   background-color: #262626;
   color: #ffffff;
@@ -685,16 +616,16 @@ button {
 }
 
 .modal-details {
-  padding: 40px 32px;
+  padding: 36px 28px;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 12px;
 }
 
 .modal-action-row {
   display: flex;
   gap: 12px;
-  margin-top: 16px;
+  margin-top: 14px;
   flex-wrap: wrap;
 }
 
@@ -709,26 +640,24 @@ button {
 .illum-toast {
   background-color: var(--color-yellow);
   color: #000000;
-  padding: 14px 24px;
+  padding: 12px 20px;
   border-radius: 9999px;
-  font-size: 13.3333px;
-  font-weight: 800;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
 }
 
 /* ==================== RESPONSIVE ==================== */
 @media (max-width: 1100px) {
   .films-staggered-grid { grid-template-columns: repeat(2, 1fr); }
-  .yellow-title { font-size: 58px; }
-  .hero-title { font-size: 46px; }
+  .yellow-title { font-size: 46px; }
 }
 
 @media (max-width: 768px) {
   .films-staggered-grid { grid-template-columns: 1fr; }
   .characters-duo-grid { grid-template-columns: 1fr; }
   .studio-grid { grid-template-columns: 1fr; }
-  .yellow-title { font-size: 42px; }
-  .hero-title { font-size: 36px; }
+  .yellow-title { font-size: 36px; }
   .modal-box { grid-template-columns: 1fr; max-height: 90vh; overflow-y: auto; }
   .content-wrapper, .hero-frame, .header-inner, .footer-wrapper { padding: 0 20px; }
 }

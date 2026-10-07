@@ -1,18 +1,41 @@
 /**
  * SLUMFILMS — 3D ANIMATION PORTAL
- * Real 3D Animation Video Player · "Our films" Yellow Catalog · Character Showcase · Modal Lightbox
+ * Authentic 3D Animation Artwork · "Our films" Yellow Catalog · Character Showcase · Modal Lightbox
  */
 
 document.addEventListener('DOMContentLoaded', () => {
 
   // ==========================================
-  // 3D ANIMATED FILMS CATALOG (AUTHENTIC ARTWORK)
+  // 3D ANIMATION FILMS CATALOG (MATCHING USER SCREENSHOTS)
   // ==========================================
   const FILMS_3D_CATALOG = [
     {
+      id: 'octopus-saga',
+      title: 'Ocean Legends 3D',
+      badge: '3D CGI / ADVENTURE',
+      year: '2024',
+      duration: '1h 38m',
+      rating: 'PG',
+      tagline: 'DEPTHS OF THE UNKNOWN',
+      poster: 'images/art/octopus-tentacle.svg',
+      vid: 'qQBaMuB1oBA',
+      synopsis: 'A deep-sea CGI animated odyssey uncovering ancient oceanic titans and bioluminescent wonders beneath the mythical Gulf of Guinea.'
+    },
+    {
+      id: 'starry-cosmos',
+      title: 'Cosmic Horizons',
+      badge: '3D SCI-FI / ANIMATION',
+      year: '2024',
+      duration: '1h 44m',
+      rating: 'PG',
+      tagline: 'BEYOND THE STARS',
+      poster: 'images/art/starry-cosmos.svg',
+      vid: 'TnGl01FkMMo',
+      synopsis: 'An apprentice astronomer journeys across interstellar starlight to decode celestial constellations and protect planetary harmony.'
+    },
+    {
       id: 'sing-2',
-      title: 'SING 2',
-      studio: 'SLUMFILMS',
+      title: 'Sing 2',
       badge: '3D ANIMATION / MUSICAL',
       year: '2022',
       duration: '1h 50m',
@@ -20,12 +43,11 @@ document.addEventListener('DOMContentLoaded', () => {
       tagline: 'WHERE WILL YOUR DREAMS TAKE YOU?',
       poster: 'images/posters/sing-1.jpg',
       vid: 'EPuZU-g9U2c',
-      synopsis: 'Buster Moon and his all-star cast of animal performers prepare to launch their most dazzling stage extravaganza yet in the glamorous entertainment capital of the world. But to do so, they must persuade the world’s most reclusive rock star to join them.'
+      synopsis: 'Buster Moon and his all-star cast of animal performers prepare to launch their most dazzling stage extravaganza yet in the glamorous entertainment capital of the world.'
     },
     {
       id: 'despicable-me-3',
-      title: 'DESPICABLE ME 3',
-      studio: 'SLUMFILMS',
+      title: 'Despicable Me 3',
       badge: '3D ANIMATION / COMEDY',
       year: '2017',
       duration: '1h 30m',
@@ -33,12 +55,11 @@ document.addEventListener('DOMContentLoaded', () => {
       tagline: 'OH BROTHER.',
       poster: 'images/posters/despicable-me-3.jpg',
       vid: 'qQBaMuB1oBA',
-      synopsis: 'After he is fired from the Anti-Villain League for failing to take down Balthazar Bratt, Gru finds himself in the midst of a major identity crisis. But when a mysterious stranger shows up to inform Gru that he has a long-lost charming twin brother named Dru, a hilarious sibling rivalry unfolds.'
+      synopsis: 'After he is fired from the Anti-Villain League, Gru meets his long-lost charming twin brother Dru, leading to a hilarious sibling rivalry and family adventure.'
     },
     {
       id: 'the-super-mario-bros',
-      title: 'THE SUPER MARIO BROS. MOVIE',
-      studio: 'SLUMFILMS x NINTENDO',
+      title: 'The Super Mario Bros. Movie',
       badge: '3D ANIMATION / GAMING',
       year: '2023',
       duration: '1h 32m',
@@ -46,12 +67,11 @@ document.addEventListener('DOMContentLoaded', () => {
       tagline: 'NOT WATERPROOF.',
       poster: 'images/posters/the-super-mario-bros.jpg',
       vid: 'TnGl01FkMMo',
-      synopsis: 'While working underground to fix a water main, Brooklyn plumbers Mario and brother Luigi are transported down a mysterious pipe and wander into a magical new world. When the brothers are separated, Mario embarks on an epic quest to find Luigi.'
+      synopsis: 'While working underground to fix a water main, Brooklyn plumbers Mario and brother Luigi are transported down a mysterious pipe into a magical 3D world.'
     },
     {
       id: 'migration',
-      title: 'MIGRATION',
-      studio: 'SLUMFILMS',
+      title: 'Migration',
       badge: '3D ANIMATION / ADVENTURE',
       year: '2023',
       duration: '1h 23m',
@@ -59,59 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
       tagline: 'FLY INTO THE UNKNOWN.',
       poster: 'images/posters/migration-movie.svg',
       vid: 'c6rP-YP4c5I',
-      synopsis: 'A family of ducks tries to convince their overprotective father to go on the vacation of a lifetime as they attempt to migrate from New England, through New York City, and all the way to Jamaica.'
-    },
-    {
-      id: 'minions-rise-of-gru',
-      title: 'MINIONS: THE RISE OF GRU',
-      studio: 'SLUMFILMS',
-      badge: '3D ANIMATION / BLOCKBUSTER',
-      year: '2022',
-      duration: '1h 27m',
-      rating: 'PG',
-      tagline: 'BRACE YOURSELF.',
-      poster: 'images/posters/minions-rise-of-gru.svg',
-      vid: 'qQBaMuB1oBA',
-      synopsis: 'In the heart of the 1970s, amidst a flurry of feathered hair and flared jeans, Gru is growing up in the suburbs. A fanboy of a supervillain supergroup known as the Vicious 6, Gru hatches a plan to become evil enough to join them alongside his loyal Minions.'
-    },
-    {
-      id: 'iwaju-3d',
-      title: 'IWÁJÚ (3D SERIES)',
-      studio: 'KUGALI x DISNEY',
-      badge: '3D AFRO-FUTURISM / CGI',
-      year: '2024',
-      duration: '6 EPISODES',
-      rating: 'TV-PG',
-      tagline: 'THE FUTURE OF LAGOS IS NOW.',
-      poster: 'images/posters/iwaju-3d.svg',
-      vid: 'NHgoYvH5WF4',
-      synopsis: 'A coming-of-age 3D animated series that follows Tola, a young girl from the wealthy island, and her best friend, Kole, a self-taught tech expert, as they discover the secrets and dangers hidden in their different worlds across futuristic Lagos.'
-    },
-    {
-      id: 'kizazi-moto',
-      title: 'KIZAZI MOTO: GENERATION FIRE',
-      studio: 'TRIGGERFISH x DISNEY+',
-      badge: '3D AFRO-FUTURISM',
-      year: '2023',
-      duration: '10 EPISODES',
-      rating: 'PG-13',
-      tagline: 'IGNITE THE GENERATION.',
-      poster: 'images/posters/kizazi-moto.svg',
-      vid: 'NHgoYvH5WF4',
-      synopsis: 'An action-packed 3D animated sci-fi anthology that presents futuristic visions from Africa inspired by the continent’s diverse histories and cultures, exploring advanced technology, aliens, spirits, and monsters.'
-    },
-    {
-      id: 'dawn-of-thunder-3d',
-      title: 'DAWN OF THUNDER (SANGO 3D)',
-      studio: 'KOMOTION STUDIOS',
-      badge: '3D THEATRICAL EPIC',
-      year: '2024',
-      duration: '1h 45m',
-      rating: 'PG-13',
-      tagline: 'THE GOD OF THUNDER RISES.',
-      poster: 'images/posters/dawn-of-thunder-3d.svg',
-      vid: 'TnGl01FkMMo',
-      synopsis: 'The legendary Yoruba deity of thunder and lightning, Sango, rises in breathtaking 3D CGI theatrical cinema, wielding celestial dual axes to defend his people against treacherous mythical spirits and tyrant warlords.'
+      synopsis: 'A family of ducks tries to convince their overprotective father to go on the vacation of a lifetime migrating from New England to Jamaica.'
     }
   ];
 
@@ -129,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
       card.className = 'film-tile-card';
       card.innerHTML = `
         <div class="film-poster-wrap">
-          <img src="${film.poster}" alt="${film.title} 3D Movie Poster" class="film-poster-img" loading="lazy">
+          <img src="${film.poster}" alt="${film.title} 3D Poster" class="film-poster-img" loading="lazy">
         </div>
         <div class="film-tile-info">
           <h3 class="film-tile-title">${film.title}</h3>
@@ -143,33 +111,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   renderFilms();
-
-  // ==========================================
-  // YOUTUBE VIDEO CHANNEL PILLS
-  // ==========================================
-  const channelPills = document.querySelectorAll('.channel-pill');
-  const heroIframe = document.getElementById('hero-youtube-player');
-  const heroKicker = document.getElementById('hero-kicker');
-  const heroTitleText = document.getElementById('hero-title-text');
-
-  channelPills.forEach(pill => {
-    pill.addEventListener('click', () => {
-      channelPills.forEach(p => p.classList.remove('active'));
-      pill.classList.add('active');
-
-      const vid = pill.getAttribute('data-vid');
-      const title = pill.getAttribute('data-title');
-      const sub = pill.getAttribute('data-sub');
-
-      if (heroIframe) {
-        heroIframe.src = `https://www.youtube-nocookie.com/embed/${vid}?autoplay=1&mute=1&controls=1&loop=1&playlist=${vid}&rel=0&modestbranding=1`;
-      }
-      if (heroTitleText) heroTitleText.textContent = title;
-      if (heroKicker) heroKicker.textContent = sub;
-
-      showToast(`Now playing: ${title} 3D Trailer`);
-    });
-  });
 
   // ==========================================
   // FLOATING YELLOW MENU BUTTON & OVERLAY
@@ -218,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
     modalImg.src = film.poster;
     modalImg.alt = film.title;
     modalTitle.textContent = film.title;
-    modalStudioTag.textContent = `${film.studio} • ${film.badge}`;
+    modalStudioTag.textContent = `SLUMFILMS • ${film.badge}`;
     modalMeta.textContent = `${film.year} • ${film.duration} • ${film.rating}`;
     modalSynopsis.textContent = film.synopsis;
 
@@ -239,13 +180,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   modalStream?.addEventListener('click', () => {
-    const currentFilm = FILMS_3D_CATALOG.find(f => f.title === modalTitle.textContent);
-    if (currentFilm && heroIframe) {
-      heroIframe.src = `https://www.youtube-nocookie.com/embed/${currentFilm.vid}?autoplay=1&mute=0&controls=1`;
-      document.getElementById('hero')?.scrollIntoView({ behavior: 'smooth' });
-    }
+    showToast(`Launching 3D player for ${modalTitle.textContent}…`);
     closeFilmModal();
-    showToast(`Loading 3D trailer for ${modalTitle.textContent}…`);
   });
 
   window.addEventListener('keydown', (e) => {
