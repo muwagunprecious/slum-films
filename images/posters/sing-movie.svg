@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600">
+  <defs>
+    <linearGradient id="bg_sing-movie" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0d1430"/>
+      <stop offset="50%" stop-color="#182b5c"/>
+      <stop offset="100%" stop-color="#060914"/>
+    </linearGradient>
+    <filter id="shadow_sing-movie">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="rgba(0,0,0,0.6)"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="400" height="600" rx="16" fill="url(#bg_sing-movie)"/>
+
+  <!-- Dynamic 3D Animation Artwork Content -->
+  
+      <!-- Sing Moon & Stage Spotlight Scene -->
+      <defs>
+        <radialGradient id="stageGlow" cx="50%" cy="40%" r="60%">
+          <stop offset="0%" stop-color="#fff8d6" stop-opacity="0.9"/>
+          <stop offset="30%" stop-color="#fbbf24" stop-opacity="0.4"/>
+          <stop offset="100%" stop-color="#0d1430" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="crescentGold" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#ffe600"/>
+          <stop offset="50%" stop-color="#d97706"/>
+          <stop offset="100%" stop-color="#78350f"/>
+        </linearGradient>
+      </defs>
+
+      <!-- Stage Spotlight Beam -->
+      <polygon points="200,0 50,600 350,600" fill="url(#stageGlow)" opacity="0.35"/>
+      <circle cx="200" cy="220" r="160" fill="url(#stageGlow)"/>
+
+      <!-- Giant Golden Crescent Moon -->
+      <path d="M 230,100 A 130,130 0 1,0 230,340 A 100,100 0 1,1 230,100 Z" fill="url(#crescentGold)" filter="drop-shadow(0 8px 24px rgba(251,191,36,0.6))"/>
+      
+      <!-- Stage Clouds Props -->
+      <g fill="#1e293b" opacity="0.8">
+        <circle cx="120" cy="260" r="32"/>
+        <circle cx="150" cy="250" r="42"/>
+        <circle cx="180" cy="265" r="30"/>
+        <circle cx="270" cy="280" r="35"/>
+        <circle cx="295" cy="275" r="28"/>
+      </g>
+
+      <!-- 3D Characters Group (Buster Moon, Johnny, Meena, Rosita) -->
+      <!-- Johnny the Gorilla -->
+      <path d="M 120,380 C 100,350 110,310 145,310 C 175,310 185,350 170,380 Z" fill="#1e293b"/>
+      <circle cx="145" cy="295" r="24" fill="#0f172a"/>
+      <!-- Jacket -->
+      <path d="M 115,360 L 175,360 L 165,460 L 125,460 Z" fill="#10b981"/>
+      <polygon points="145,390 140,410 150,410" fill="#facc15"/>
+
+      <!-- Buster Moon (Koala in Red Bowtie on Moon) -->
+      <circle cx="215" cy="205" r="22" fill="#cbd5e1"/>
+      <circle cx="195" cy="195" r="14" fill="#94a3b8"/>
+      <circle cx="235" cy="195" r="14" fill="#94a3b8"/>
+      <!-- Suit -->
+      <path d="M 200,225 L 230,225 L 235,275 L 195,275 Z" fill="#ffffff"/>
+      <polygon points="215,230 210,235 220,235" fill="#ef4444"/>
+
+      <!-- Meena the Elephant (Blue Hoodie) -->
+      <path d="M 50,440 C 30,400 50,340 95,340 C 130,340 140,400 120,440 Z" fill="#64748b"/>
+      <circle cx="85" cy="330" r="35" fill="#64748b"/>
+      <!-- Trunk & Ears -->
+      <path d="M 45,310 C 30,310 30,360 45,370 Z" fill="#94a3b8"/>
+      <path d="M 85,340 Q 80,390 100,395" stroke="#475569" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <rect x="40" y="410" width="80" height="150" rx="15" fill="#0284c7"/>
+
+      <!-- Rosita and Gunter (Pigs) -->
+      <circle cx="270" cy="420" r="26" fill="#f472b6"/>
+      <circle cx="320" cy="440" r="22" fill="#f472b6"/>
+      <rect x="250" y="445" width="40" height="100" rx="10" fill="#ec4899"/>
+      <rect x="305" y="460" width="30" height="90" rx="8" fill="#a855f7"/>
+    
+
+  <!-- Cinematic Top Banner -->
+  <rect x="0" y="0" width="400" height="70" fill="url(#bg_sing-movie)" opacity="0.3"/>
+  <text x="200" y="32" font-family="'Montserrat', 'Inter', sans-serif" font-size="11" font-weight="900" letter-spacing="4" fill="#facc15" text-anchor="middle" text-transform="uppercase">ILLUMINATION</text>
+  <text x="200" y="48" font-family="'Montserrat', 'Inter', sans-serif" font-size="9" font-weight="700" letter-spacing="2" fill="#ffffff" opacity="0.8" text-anchor="middle">ANIMATION / MUSICAL</text>
+
+  <!-- Dark Bottom Vignette for Title Readability -->
+  <rect x="0" y="460" width="400" height="140" rx="16" fill="linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.7) 60%, transparent 100%)"/>
+
+  <!-- Movie Title & Credits -->
+  <g transform="translate(24, 520)">
+    <text x="0" y="0" font-family="'Montserrat', 'Inter', sans-serif" font-size="10" font-weight="800" letter-spacing="2" fill="#facc15">WHERE WILL YOUR DREAMS TAKE YOU?</text>
+    <text x="0" y="24" font-family="'Montserrat', 'Inter', sans-serif" font-size="20" font-weight="900" letter-spacing="0.5" fill="#ffffff">SING 2</text>
+    <text x="0" y="44" font-family="'Montserrat', 'Inter', sans-serif" font-size="11" font-weight="600" fill="#a1a1aa">2022 • 1h 50m • PG</text>
+  </g>
+</svg>

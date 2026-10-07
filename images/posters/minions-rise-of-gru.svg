@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600">
+  <defs>
+    <linearGradient id="bg_minions-rise-of-gru" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#facc15"/>
+      <stop offset="100%" stop-color="#eab308"/>
+    </linearGradient>
+    <filter id="shadow_minions-rise-of-gru">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="rgba(0,0,0,0.6)"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="400" height="600" rx="16" fill="url(#bg_minions-rise-of-gru)"/>
+
+  <!-- Dynamic 3D Animation Artwork Content -->
+  
+      <!-- Giant 3D Minions Face & Disco 70s Flair -->
+      <circle cx="200" cy="280" r="140" fill="#facc15"/>
+      
+      <!-- Big Single Goggle (Stuart/Otto) -->
+      <rect x="40" y="235" width="320" height="26" fill="#1e293b"/>
+      <circle cx="200" cy="248" r="65" fill="#94a3b8" stroke="#64748b" stroke-width="6"/>
+      <circle cx="200" cy="248" r="50" fill="#ffffff"/>
+      <circle cx="200" cy="248" r="22" fill="#854d0e"/>
+      <circle cx="200" cy="248" r="10" fill="#000000"/>
+      <circle cx="194" cy="242" r="5" fill="#ffffff"/>
+
+      <!-- Big Smiling Mouth with Braces -->
+      <path d="M 140,330 Q 200,385 260,330 Z" fill="#881337"/>
+      <path d="M 140,330 Q 200,355 260,330 Z" fill="#ffffff"/>
+      <!-- Braces Wire -->
+      <line x1="145" y1="334" x2="255" y2="334" stroke="#94a3b8" stroke-width="3"/>
+
+      <!-- 70s Style Denim Overalls with Gru Logo -->
+      <path d="M 90,420 L 310,420 L 320,600 L 80,600 Z" fill="#1d4ed8"/>
+      <rect x="135" y="380" width="130" height="50" fill="#1d4ed8"/>
+      <circle cx="200" cy="460" r="26" fill="#0f172a"/>
+      <text x="200" y="470" font-size="24" font-weight="900" fill="#facc15" text-anchor="middle">G</text>
+    
+
+  <!-- Cinematic Top Banner -->
+  <rect x="0" y="0" width="400" height="70" fill="url(#bg_minions-rise-of-gru)" opacity="0.3"/>
+  <text x="200" y="32" font-family="'Montserrat', 'Inter', sans-serif" font-size="11" font-weight="900" letter-spacing="4" fill="#000000" text-anchor="middle" text-transform="uppercase">ILLUMINATION</text>
+  <text x="200" y="48" font-family="'Montserrat', 'Inter', sans-serif" font-size="9" font-weight="700" letter-spacing="2" fill="#ffffff" opacity="0.8" text-anchor="middle">ANIMATION / BLOCKBUSTER</text>
+
+  <!-- Dark Bottom Vignette for Title Readability -->
+  <rect x="0" y="460" width="400" height="140" rx="16" fill="linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.7) 60%, transparent 100%)"/>
+
+  <!-- Movie Title & Credits -->
+  <g transform="translate(24, 520)">
+    <text x="0" y="0" font-family="'Montserrat', 'Inter', sans-serif" font-size="10" font-weight="800" letter-spacing="2" fill="#000000">BRACE YOURSELF.</text>
+    <text x="0" y="24" font-family="'Montserrat', 'Inter', sans-serif" font-size="20" font-weight="900" letter-spacing="0.5" fill="#ffffff">MINIONS: THE RISE OF GRU</text>
+    <text x="0" y="44" font-family="'Montserrat', 'Inter', sans-serif" font-size="11" font-weight="600" fill="#a1a1aa">2022 • 1h 27m • PG</text>
+  </g>
+</svg>

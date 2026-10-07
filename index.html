@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SLUMFILMS — OUR FILMS & 3D ANIMATION STUDIOS</title>
+  <meta name="description" content="SlumFilms — Creators of groundbreaking 3D animated cinema, blockbuster animation, and African 3D universe stories.">
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23ffea00'/><circle cx='50' cy='50' r='28' fill='%23000000'/><circle cx='50' cy='50' r='14' fill='%23ffea00'/></svg>">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==================== FLOATING YELLOW CIRCULAR MENU BUTTON (TOP-RIGHT) ==================== -->
+  <button class="floating-yellow-menu" id="floating-menu-btn" aria-label="Toggle Navigation Menu">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="illum-header">
+    <div class="header-inner">
+      <div class="header-spacer"></div>
+
+      <!-- Centered SlumFilms Brand Lockup -->
+      <a href="#" class="slum-brand" aria-label="SlumFilms">
+        <span class="brand-title">SLUMFILMS</span>
+        <span class="brand-sub">STUDIOS & AFRICAN 3D ANIMATION</span>
+      </a>
+
+      <div class="header-spacer"></div>
+    </div>
+
+    <!-- Fullscreen Minimal Menu Overlay -->
+    <div class="nav-overlay hidden" id="nav-overlay">
+      <button class="nav-close-btn" id="nav-close" aria-label="Close Navigation">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <div class="nav-overlay-content">
+        <a href="#hero" class="overlay-link">FEATURED 3D TRAILER</a>
+        <a href="#our-films" class="overlay-link">OUR FILMS</a>
+        <a href="#characters" class="overlay-link">CHARACTERS & SHOWCASE</a>
+        <a href="#studio" class="overlay-link">ANIMATION LAB & CAREERS</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HERO SECTION (REAL 3D ANIMATION VIDEO TRAILER) ==================== -->
+    <section class="hero-section" id="hero">
+      <div class="hero-frame">
+        
+        <!-- Large Video Container with Verified Embed -->
+        <div class="media-container" id="hero-media-wrap">
+          <iframe 
+            id="hero-youtube-player"
+            class="hero-video-iframe"
+            src="https://www.youtube-nocookie.com/embed/qQBaMuB1oBA?autoplay=1&mute=1&controls=1&loop=1&playlist=qQBaMuB1oBA&rel=0&modestbranding=1" 
+            title="Despicable Me 4 - Official 3D Animation Trailer" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <!-- Video Channel Selector Pills -->
+        <div class="video-channel-pills">
+          <button class="channel-pill active" data-vid="qQBaMuB1oBA" data-title="DESPICABLE ME 4" data-sub="SLUMFILMS BLOCKBUSTER • 3D ANIMATED THEATRICAL RELEASE">
+            ▶ 1. DESPICABLE ME 4
+          </button>
+          <button class="channel-pill" data-vid="TnGl01FkMMo" data-title="THE SUPER MARIO BROS. MOVIE" data-sub="SLUMFILMS x NINTENDO • 3D ANIMATED PHENOMENON">
+            ▶ 2. SUPER MARIO BROS
+          </button>
+          <button class="channel-pill" data-vid="EPuZU-g9U2c" data-title="SING 2" data-sub="SLUMFILMS MUSICAL • 3D ANIMATED BLOCKBUSTER">
+            ▶ 3. SING 2
+          </button>
+          <button class="channel-pill" data-vid="c6rP-YP4c5I" data-title="MIGRATION" data-sub="SLUMFILMS ADVENTURE • 3D ANIMATED CINEMA">
+            ▶ 4. MIGRATION
+          </button>
+          <button class="channel-pill" data-vid="NHgoYvH5WF4" data-title="IWÁJÚ: FUTURISTIC LAGOS" data-sub="KUGALI & DISNEY • NIGERIAN 3D ANIMATION SERIES">
+            ▶ 5. IWÁJÚ (3D SCI-FI)
+          </button>
+        </div>
+
+        <!-- Hero Headline & Metadata -->
+        <div class="hero-text-block">
+          <span class="hero-tag" id="hero-kicker">SLUMFILMS BLOCKBUSTER • 3D ANIMATED THEATRICAL RELEASE</span>
+          <h1 class="hero-title" id="hero-title-text">DESPICABLE ME 4</h1>
+          <p class="hero-desc" id="hero-desc-text">
+            Gru, Lucy, Margo, Edith, and Agnes welcome a new member to the family, Gru Jr., who is intent on tormenting his dad. Gru faces a new nemesis in Maxime Le Mal and his femme fatale girlfriend Valentina.
+          </p>
+          <div class="hero-btn-row">
+            <a href="#our-films" class="btn-primary pill-btn">EXPLORE OUR FILMS</a>
+            <button class="btn-secondary pill-btn" onclick="openFilmModalById('despicable-me-4')">FILM DETAILS</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         "OUR FILMS" SECTION (SIGNATURE ILLUMINATION YELLOW #ffea00)
+         ========================================================================== -->
+    <section class="illum-yellow-films-section" id="our-films">
+      <div class="content-wrapper">
+        <div class="yellow-section-header">
+          <h2 class="yellow-title">Our films</h2>
+        </div>
+
+        <!-- 3D Animation Staggered Cards Grid -->
+        <div class="films-staggered-grid" id="films-grid">
+          <!-- Rendered via JavaScript with Authentic 3D Animated Film Posters -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CLEAN WHITE CHARACTER SHOWCASE (MATCHING SCREENSHOT 2)
+         ========================================================================== -->
+    <section class="illum-white-characters-section" id="characters">
+      <div class="content-wrapper">
+        <div class="white-section-header">
+          <h3>ICONIC 3D CHARACTERS</h3>
+        </div>
+
+        <div class="characters-duo-grid">
+          <!-- Left: Sing Movie Cast -->
+          <div class="duo-card" onclick="openFilmModalById('sing-2')">
+            <div class="duo-img-box">
+              <img src="images/posters/sing-1.jpg" alt="Sing 3D Animation Cast" loading="lazy">
+            </div>
+            <div class="duo-content">
+              <span class="duo-tag">MUSICAL EXTRAVAGANZA</span>
+              <h4 class="duo-title">BUSTER MOON & ALL-STAR CAST</h4>
+              <p class="duo-desc">
+                Follow Buster Moon, Johnny, Meena, Rosita, and Gunter as they pursue their greatest musical dreams on the global stage.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right: Gru & Dru -->
+          <div class="duo-card" onclick="openFilmModalById('despicable-me-3')">
+            <div class="duo-img-box">
+              <img src="images/posters/despicable-me-3.jpg" alt="Gru and Dru 3D Characters" loading="lazy">
+            </div>
+            <div class="duo-content">
+              <span class="duo-tag">SIBLING RIVALRY</span>
+              <h4 class="duo-title">GRU & DRU</h4>
+              <p class="duo-desc">
+                The world’s greatest villain-turned-hero meets his charming, blonde, billionaire twin brother in an explosive 3D animated comedy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SLUMFILMS 3D ANIMATION STUDIO & CAREERS
+         ========================================================================== -->
+    <section class="studio-section" id="studio">
+      <div class="content-wrapper">
+        <div class="studio-grid">
+          <div class="studio-card">
+            <span class="studio-eyebrow">3D CGI & LIGHTING PIPELINE</span>
+            <h3>SLUMFILMS ANIMATION LAB</h3>
+            <p>
+              Merging state-of-the-art CGI technology with authentic African storytelling. Accelerating 3D character rigging, volumetric rendering, and cinematic narrative incubation.
+            </p>
+            <button class="btn-primary pill-btn" id="lab-btn" style="align-self:flex-start;">EXPLORE ANIMATION LAB</button>
+          </div>
+
+          <div class="studio-card">
+            <span class="studio-eyebrow">GLOBAL TALENT & CAREERS</span>
+            <h3>JOIN SLUMFILMS STUDIOS</h3>
+            <p>
+              We are hiring 3D character animators, lighting artists, story directors, and sound designers to create the next generation of blockbuster animated theatrical cinema.
+            </p>
+            <button class="btn-secondary pill-btn" id="jobs-btn" style="align-self:flex-start;">VIEW OPEN ROLES</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="illum-footer">
+    <div class="footer-wrapper">
+      <div class="footer-brand">
+        <span class="brand-title">SLUMFILMS</span>
+        <span class="brand-sub">© 2026 SLUMFILMS ENTERTAINMENT & 3D ANIMATION STUDIOS</span>
+      </div>
+
+      <div class="footer-links">
+        <a href="#hero" class="footer-link">TRAILERS</a>
+        <a href="#our-films" class="footer-link">OUR FILMS</a>
+        <a href="#characters" class="footer-link">CHARACTERS</a>
+        <a href="#studio" class="footer-link">STUDIO LAB</a>
+        <a href="#" class="footer-link">PRIVACY POLICY</a>
+        <a href="#" class="footer-link">TERMS OF SERVICE</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== 3D FILM LIGHTBOX MODAL ==================== -->
+  <div class="modal-backdrop hidden" id="film-modal" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <button class="modal-close" id="modal-close-btn" aria-label="Close modal">✕</button>
+      <div class="modal-media-wrap">
+        <img src="" alt="" id="modal-poster-img" class="modal-poster">
+      </div>
+      <div class="modal-details">
+        <span class="hero-tag" id="modal-studio-tag">SLUMFILMS • 3D ANIMATION</span>
+        <h2 style="font-size:30px;font-weight:900;color:#ffffff;text-transform:uppercase;" id="modal-title">FILM TITLE</h2>
+        <p style="font-size:13px;font-weight:700;color:#ffea00;" id="modal-meta">2024 • 1h 45m • PG</p>
+        <p style="font-size:15px;line-height:26px;color:#d1d5db;" id="modal-synopsis">Movie synopsis and theatrical storyline.</p>
+        <div class="modal-action-row">
+          <button class="btn-primary pill-btn" id="modal-stream-btn">WATCH TRAILER</button>
+          <button class="btn-secondary pill-btn" id="modal-cancel-btn">CLOSE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-container" id="toast-box"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

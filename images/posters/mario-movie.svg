@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600">
+  <defs>
+    <linearGradient id="bg_mario-movie" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="50%" stop-color="#4338ca"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <filter id="shadow_mario-movie">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="rgba(0,0,0,0.6)"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="400" height="600" rx="16" fill="url(#bg_mario-movie)"/>
+
+  <!-- Dynamic 3D Animation Artwork Content -->
+  
+      <!-- Mushroom Kingdom 3D Floating Hills & Warp Pipes -->
+      <defs>
+        <linearGradient id="pipeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#16a34a"/>
+          <stop offset="40%" stop-color="#4ade80"/>
+          <stop offset="100%" stop-color="#15803d"/>
+        </linearGradient>
+      </defs>
+
+      <!-- Giant Red Super Mushroom in Center -->
+      <g transform="translate(110, 140)">
+        <!-- Mushroom Cap -->
+        <path d="M 10,120 C 10,20 170,20 170,120 Z" fill="#ef4444" filter="drop-shadow(0 12px 28px rgba(239,68,68,0.5))"/>
+        <!-- White Spots -->
+        <circle cx="90" cy="65" r="30" fill="#ffffff"/>
+        <circle cx="25" cy="100" r="18" fill="#ffffff"/>
+        <circle cx="155" cy="100" r="18" fill="#ffffff"/>
+        <!-- Stem -->
+        <rect x="45" y="115" width="90" height="60" rx="20" fill="#fef08a"/>
+        <ellipse cx="70" cy="135" rx="5" ry="12" fill="#000000"/>
+        <ellipse cx="110" cy="135" rx="5" ry="12" fill="#000000"/>
+      </g>
+
+      <!-- Green Warp Pipe -->
+      <g transform="translate(120, 360)">
+        <rect x="15" y="0" width="130" height="40" rx="6" fill="url(#pipeGrad)"/>
+        <rect x="25" y="38" width="110" height="150" fill="url(#pipeGrad)"/>
+      </g>
+
+      <!-- Question Mark Block -->
+      <g transform="translate(270, 100)">
+        <rect x="0" y="0" width="60" height="60" rx="10" fill="#f59e0b" stroke="#b45309" stroke-width="4"/>
+        <circle cx="8" cy="8" r="3" fill="#78350f"/>
+        <circle cx="52" cy="8" r="3" fill="#78350f"/>
+        <circle cx="8" cy="52" r="3" fill="#78350f"/>
+        <circle cx="52" cy="52" r="3" fill="#78350f"/>
+        <text x="30" y="42" font-size="34" font-weight="900" fill="#ffffff" text-anchor="middle" font-family="sans-serif">?</text>
+      </g>
+    
+
+  <!-- Cinematic Top Banner -->
+  <rect x="0" y="0" width="400" height="70" fill="url(#bg_mario-movie)" opacity="0.3"/>
+  <text x="200" y="32" font-family="'Montserrat', 'Inter', sans-serif" font-size="11" font-weight="900" letter-spacing="4" fill="#ef4444" text-anchor="middle" text-transform="uppercase">ILLUMINATION x NINTENDO</text>
+  <text x="200" y="48" font-family="'Montserrat', 'Inter', sans-serif" font-size="9" font-weight="700" letter-spacing="2" fill="#ffffff" opacity="0.8" text-anchor="middle">ANIMATION / GAMING</text>
+
+  <!-- Dark Bottom Vignette for Title Readability -->
+  <rect x="0" y="460" width="400" height="140" rx="16" fill="linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.7) 60%, transparent 100%)"/>
+
+  <!-- Movie Title & Credits -->
+  <g transform="translate(24, 520)">
+    <text x="0" y="0" font-family="'Montserrat', 'Inter', sans-serif" font-size="10" font-weight="800" letter-spacing="2" fill="#ef4444">NOT WATERPROOF.</text>
+    <text x="0" y="24" font-family="'Montserrat', 'Inter', sans-serif" font-size="20" font-weight="900" letter-spacing="0.5" fill="#ffffff">THE SUPER MARIO BROS. MOVIE</text>
+    <text x="0" y="44" font-family="'Montserrat', 'Inter', sans-serif" font-size="11" font-weight="600" fill="#a1a1aa">2023 • 1h 32m • PG</text>
+  </g>
+</svg>

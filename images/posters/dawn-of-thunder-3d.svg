@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600">
+  <defs>
+    <linearGradient id="bg_dawn-of-thunder-3d" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#18181b"/>
+      <stop offset="50%" stop-color="#3f3f46"/>
+      <stop offset="100%" stop-color="#71717a"/>
+    </linearGradient>
+    <filter id="shadow_dawn-of-thunder-3d">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="rgba(0,0,0,0.6)"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="400" height="600" rx="16" fill="url(#bg_dawn-of-thunder-3d)"/>
+
+  <!-- Dynamic 3D Animation Artwork Content -->
+  
+      <!-- Glowing 3D Double Thunder Axe & Storm Lightning -->
+      <defs>
+        <radialGradient id="thunderCore" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#ffffff"/>
+          <stop offset="40%" stop-color="#ef4444"/>
+          <stop offset="100%" stop-color="#000000"/>
+        </radialGradient>
+      </defs>
+
+      <!-- Storm Vortex -->
+      <circle cx="200" cy="270" r="140" fill="url(#thunderCore)" opacity="0.4"/>
+
+      <!-- Branching Lightning Bolts -->
+      <g stroke="#ffffff" stroke-width="4" filter="drop-shadow(0 0 14px #ef4444)">
+        <polyline points="200,40 180,140 220,200 190,300 240,440"/>
+        <polyline points="100,100 130,180 110,240"/>
+        <polyline points="300,100 270,180 290,240"/>
+      </g>
+
+      <!-- 3D Oshé Sango (Double-Headed Thunder Axe) -->
+      <g transform="translate(140, 160)">
+        <!-- Axe Handle -->
+        <rect x="52" y="0" width="16" height="240" rx="8" fill="#78350f" stroke="#d97706" stroke-width="2"/>
+        <!-- Double Curved Blades -->
+        <path d="M 60,40 C -10,10 -10,90 60,60 Z" fill="#ef4444" stroke="#fbbf24" stroke-width="3" filter="drop-shadow(0 0 16px #ef4444)"/>
+        <path d="M 60,40 C 130,10 130,90 60,60 Z" fill="#ef4444" stroke="#fbbf24" stroke-width="3" filter="drop-shadow(0 0 16px #ef4444)"/>
+        <circle cx="60" cy="50" r="10" fill="#facc15"/>
+      </g>
+    
+
+  <!-- Cinematic Top Banner -->
+  <rect x="0" y="0" width="400" height="70" fill="url(#bg_dawn-of-thunder-3d)" opacity="0.3"/>
+  <text x="200" y="32" font-family="'Montserrat', 'Inter', sans-serif" font-size="11" font-weight="900" letter-spacing="4" fill="#ef4444" text-anchor="middle" text-transform="uppercase">KOMOTION STUDIOS</text>
+  <text x="200" y="48" font-family="'Montserrat', 'Inter', sans-serif" font-size="9" font-weight="700" letter-spacing="2" fill="#ffffff" opacity="0.8" text-anchor="middle">3D THEATRICAL EPIC</text>
+
+  <!-- Dark Bottom Vignette for Title Readability -->
+  <rect x="0" y="460" width="400" height="140" rx="16" fill="linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.7) 60%, transparent 100%)"/>
+
+  <!-- Movie Title & Credits -->
+  <g transform="translate(24, 520)">
+    <text x="0" y="0" font-family="'Montserrat', 'Inter', sans-serif" font-size="10" font-weight="800" letter-spacing="2" fill="#ef4444">THE GOD OF THUNDER RISES.</text>
+    <text x="0" y="24" font-family="'Montserrat', 'Inter', sans-serif" font-size="20" font-weight="900" letter-spacing="0.5" fill="#ffffff">DAWN OF THUNDER (SANGO 3D)</text>
+    <text x="0" y="44" font-family="'Montserrat', 'Inter', sans-serif" font-size="11" font-weight="600" fill="#a1a1aa">2024 • 1h 45m • PG-13</text>
+  </g>
+</svg>

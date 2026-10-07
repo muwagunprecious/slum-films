@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600">
+  <defs>
+    <linearGradient id="bg_despicable-me-3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="50%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+    <filter id="shadow_despicable-me-3">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="rgba(0,0,0,0.6)"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="400" height="600" rx="16" fill="url(#bg_despicable-me-3)"/>
+
+  <!-- Dynamic 3D Animation Artwork Content -->
+  
+      <!-- Gru (Black/Grey Scarf) & Dru (White Suit) -->
+      <defs>
+        <linearGradient id="druBlonde" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#fde047"/>
+          <stop offset="100%" stop-color="#eab308"/>
+        </linearGradient>
+      </defs>
+
+      <!-- Gru Profile (Left) -->
+      <g transform="translate(60, 140)">
+        <!-- Gru Head -->
+        <circle cx="90" cy="110" r="45" fill="#fed7aa"/>
+        <!-- Pointy Nose -->
+        <polygon points="50,110 90,95 90,125" fill="#fdba74"/>
+        <!-- Eye -->
+        <circle cx="75" cy="100" r="6" fill="#ffffff"/>
+        <circle cx="74" cy="100" r="3" fill="#0284c7"/>
+        <!-- Gru Scarf (Black & Grey Stripes) -->
+        <rect x="70" y="150" width="40" height="16" fill="#0f172a"/>
+        <rect x="70" y="166" width="40" height="16" fill="#64748b"/>
+        <rect x="70" y="182" width="40" height="16" fill="#0f172a"/>
+        <rect x="70" y="198" width="40" height="16" fill="#64748b"/>
+        <rect x="70" y="214" width="40" height="80" fill="#0f172a"/>
+        <!-- Dark Coat -->
+        <path d="M 60,160 L 140,160 L 150,380 L 50,380 Z" fill="#1e293b"/>
+      </g>
+
+      <!-- Dru Profile (Right - Laughing with Luxurious Hair) -->
+      <g transform="translate(210, 120)">
+        <!-- Dru Luxurious Blonde Hair -->
+        <path d="M 30,90 Q 70,30 110,70 Q 140,110 100,140 Q 60,150 40,120 Z" fill="url(#druBlonde)" filter="drop-shadow(0 4px 12px rgba(234,179,8,0.4))"/>
+        <!-- Head -->
+        <circle cx="50" cy="130" r="45" fill="#fed7aa"/>
+        <!-- Pointy Nose Laughing -->
+        <polygon points="90,130 50,115 50,145" fill="#fdba74"/>
+        <!-- Open Mouth Laugh -->
+        <path d="M 55,145 Q 75,175 45,175 Z" fill="#881337"/>
+        <path d="M 55,145 Q 68,155 45,155 Z" fill="#ffffff"/>
+        <!-- White Scarf & Pure White Coat -->
+        <rect x="30" y="175" width="45" height="150" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+        <path d="M 20,185 L 100,185 L 110,400 L 10,400 Z" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+      </g>
+
+      <!-- Minions at the Bottom -->
+      <g transform="translate(130, 420)">
+        <rect x="30" y="30" width="70" height="110" rx="35" fill="#facc15"/>
+        <!-- Goggle -->
+        <circle cx="65" cy="65" r="22" fill="#94a3b8"/>
+        <circle cx="65" cy="65" r="16" fill="#ffffff"/>
+        <circle cx="65" cy="65" r="7" fill="#854d0e"/>
+        <!-- Overall -->
+        <path d="M 30,105 L 100,105 L 100,140 L 30,140 Z" fill="#1d4ed8"/>
+        <rect x="45" y="90" width="40" height="20" fill="#1d4ed8"/>
+      </g>
+    
+
+  <!-- Cinematic Top Banner -->
+  <rect x="0" y="0" width="400" height="70" fill="url(#bg_despicable-me-3)" opacity="0.3"/>
+  <text x="200" y="32" font-family="'Montserrat', 'Inter', sans-serif" font-size="11" font-weight="900" letter-spacing="4" fill="#000000" text-anchor="middle" text-transform="uppercase">ILLUMINATION</text>
+  <text x="200" y="48" font-family="'Montserrat', 'Inter', sans-serif" font-size="9" font-weight="700" letter-spacing="2" fill="#ffffff" opacity="0.8" text-anchor="middle">ANIMATION / COMEDY</text>
+
+  <!-- Dark Bottom Vignette for Title Readability -->
+  <rect x="0" y="460" width="400" height="140" rx="16" fill="linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.7) 60%, transparent 100%)"/>
+
+  <!-- Movie Title & Credits -->
+  <g transform="translate(24, 520)">
+    <text x="0" y="0" font-family="'Montserrat', 'Inter', sans-serif" font-size="10" font-weight="800" letter-spacing="2" fill="#000000">OH BROTHER.</text>
+    <text x="0" y="24" font-family="'Montserrat', 'Inter', sans-serif" font-size="20" font-weight="900" letter-spacing="0.5" fill="#ffffff">DESPICABLE ME 3</text>
+    <text x="0" y="44" font-family="'Montserrat', 'Inter', sans-serif" font-size="11" font-weight="600" fill="#a1a1aa">2017 • 1h 30m • PG</text>
+  </g>
+</svg>

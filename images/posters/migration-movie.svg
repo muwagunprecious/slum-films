@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600">
+  <defs>
+    <linearGradient id="bg_migration-movie" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#fb923c"/>
+      <stop offset="100%" stop-color="#fef08a"/>
+    </linearGradient>
+    <filter id="shadow_migration-movie">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="rgba(0,0,0,0.6)"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="400" height="600" rx="16" fill="url(#bg_migration-movie)"/>
+
+  <!-- Dynamic 3D Animation Artwork Content -->
+  
+      <!-- Sunset Sky & Flying Mallard Ducks -->
+      <defs>
+        <linearGradient id="duckHead" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#059669"/>
+          <stop offset="100%" stop-color="#064e3b"/>
+        </linearGradient>
+      </defs>
+
+      <!-- Giant Sun -->
+      <circle cx="200" cy="300" r="130" fill="#fed7aa" opacity="0.6"/>
+      <circle cx="200" cy="300" r="90" fill="#fef08a" opacity="0.8"/>
+
+      <!-- Lead Mallard Dad (Mack) In Flight -->
+      <g transform="translate(140, 160) rotate(-15)">
+        <!-- Wings Spread -->
+        <ellipse cx="60" cy="80" rx="90" ry="30" fill="#78350f" transform="rotate(-30 60 80)"/>
+        <!-- Duck Body -->
+        <ellipse cx="60" cy="80" rx="55" ry="28" fill="#92400e"/>
+        <!-- Emerald Head -->
+        <circle cx="110" cy="65" r="22" fill="url(#duckHead)"/>
+        <circle cx="100" cy="72" r="24" fill="#ffffff" opacity="0.3"/>
+        <!-- Yellow Bill -->
+        <polygon points="128,60 155,68 128,75" fill="#facc15"/>
+        <!-- Eye -->
+        <circle cx="118" cy="62" r="4" fill="#000000"/>
+        <circle cx="120" cy="61" r="1.5" fill="#ffffff"/>
+      </g>
+
+      <!-- Mom Duck (Pam) -->
+      <g transform="translate(80, 260) rotate(-10)">
+        <ellipse cx="50" cy="70" rx="70" ry="24" fill="#b45309"/>
+        <circle cx="95" cy="55" r="18" fill="#d97706"/>
+        <polygon points="110,50 132,58 110,64" fill="#f59e0b"/>
+      </g>
+
+      <!-- Ducklings (Dax & Gwen) -->
+      <g transform="translate(230, 240) rotate(-12)">
+        <ellipse cx="30" cy="40" rx="35" ry="16" fill="#fbbf24"/>
+        <circle cx="55" cy="32" r="12" fill="#f59e0b"/>
+        <polygon points="65,28 78,33 65,37" fill="#ea580c"/>
+      </g>
+
+      <!-- Clouds -->
+      <ellipse cx="80" cy="480" rx="120" ry="40" fill="#ffffff" opacity="0.7"/>
+      <ellipse cx="320" cy="440" rx="140" ry="50" fill="#ffffff" opacity="0.8"/>
+    
+
+  <!-- Cinematic Top Banner -->
+  <rect x="0" y="0" width="400" height="70" fill="url(#bg_migration-movie)" opacity="0.3"/>
+  <text x="200" y="32" font-family="'Montserrat', 'Inter', sans-serif" font-size="11" font-weight="900" letter-spacing="4" fill="#0284c7" text-anchor="middle" text-transform="uppercase">ILLUMINATION</text>
+  <text x="200" y="48" font-family="'Montserrat', 'Inter', sans-serif" font-size="9" font-weight="700" letter-spacing="2" fill="#ffffff" opacity="0.8" text-anchor="middle">ANIMATION / ADVENTURE</text>
+
+  <!-- Dark Bottom Vignette for Title Readability -->
+  <rect x="0" y="460" width="400" height="140" rx="16" fill="linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.7) 60%, transparent 100%)"/>
+
+  <!-- Movie Title & Credits -->
+  <g transform="translate(24, 520)">
+    <text x="0" y="0" font-family="'Montserrat', 'Inter', sans-serif" font-size="10" font-weight="800" letter-spacing="2" fill="#0284c7">FLY INTO THE UNKNOWN.</text>
+    <text x="0" y="24" font-family="'Montserrat', 'Inter', sans-serif" font-size="20" font-weight="900" letter-spacing="0.5" fill="#ffffff">MIGRATION</text>
+    <text x="0" y="44" font-family="'Montserrat', 'Inter', sans-serif" font-size="11" font-weight="600" fill="#a1a1aa">2023 • 1h 23m • PG</text>
+  </g>
+</svg>

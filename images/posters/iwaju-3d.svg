@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600">
+  <defs>
+    <linearGradient id="bg_iwaju-3d" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#042f2e"/>
+      <stop offset="50%" stop-color="#0f766e"/>
+      <stop offset="100%" stop-color="#134e4a"/>
+    </linearGradient>
+    <filter id="shadow_iwaju-3d">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="rgba(0,0,0,0.6)"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="400" height="600" rx="16" fill="url(#bg_iwaju-3d)"/>
+
+  <!-- Dynamic 3D Animation Artwork Content -->
+  
+      <!-- 3D Futuristic Lagos Skyline & Cybernetic Agama Lizard -->
+      <defs>
+        <linearGradient id="neonCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#22d3ee"/>
+          <stop offset="100%" stop-color="#0891b2"/>
+        </linearGradient>
+      </defs>
+
+      <!-- Solarpunk Floating Towers -->
+      <polygon points="120,420 160,160 200,420" fill="#0f172a" opacity="0.8"/>
+      <polygon points="200,440 240,120 280,440" fill="#1e293b"/>
+      <line x1="240" y1="120" x2="240" y2="80" stroke="#22d3ee" stroke-width="3"/>
+      <circle cx="240" cy="80" r="6" fill="#facc15" filter="drop-shadow(0 0 10px #facc15)"/>
+
+      <!-- Otin the Cyber-Agama Lizard Head Rending in 3D -->
+      <g transform="translate(130, 220)">
+        <!-- Stylized 3D Cyber Lizard -->
+        <path d="M 20,80 Q 70,10 120,80 L 100,120 Q 60,110 20,80 Z" fill="#0284c7" filter="drop-shadow(0 10px 24px rgba(34,211,238,0.5))"/>
+        <!-- Robotic Plate Lines -->
+        <path d="M 60,35 L 75,75" stroke="#facc15" stroke-width="3"/>
+        <path d="M 90,45 L 95,85" stroke="#22d3ee" stroke-width="3"/>
+        <!-- Glowing Optical Sensor Eye -->
+        <circle cx="85" cy="55" r="10" fill="#facc15"/>
+        <circle cx="85" cy="55" r="5" fill="#ffffff"/>
+      </g>
+
+      <!-- Monorail Bridge & Speed Beams -->
+      <path d="M 0,440 Q 200,380 400,420" stroke="#22d3ee" stroke-width="6" fill="none"/>
+      <line x1="150" y1="410" x2="250" y2="395" stroke="#facc15" stroke-width="8" stroke-linecap="round"/>
+    
+
+  <!-- Cinematic Top Banner -->
+  <rect x="0" y="0" width="400" height="70" fill="url(#bg_iwaju-3d)" opacity="0.3"/>
+  <text x="200" y="32" font-family="'Montserrat', 'Inter', sans-serif" font-size="11" font-weight="900" letter-spacing="4" fill="#00f0ff" text-anchor="middle" text-transform="uppercase">KUGALI x DISNEY</text>
+  <text x="200" y="48" font-family="'Montserrat', 'Inter', sans-serif" font-size="9" font-weight="700" letter-spacing="2" fill="#ffffff" opacity="0.8" text-anchor="middle">3D SCI-FI / CGI</text>
+
+  <!-- Dark Bottom Vignette for Title Readability -->
+  <rect x="0" y="460" width="400" height="140" rx="16" fill="linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.7) 60%, transparent 100%)"/>
+
+  <!-- Movie Title & Credits -->
+  <g transform="translate(24, 520)">
+    <text x="0" y="0" font-family="'Montserrat', 'Inter', sans-serif" font-size="10" font-weight="800" letter-spacing="2" fill="#00f0ff">THE FUTURE OF LAGOS IS NOW.</text>
+    <text x="0" y="24" font-family="'Montserrat', 'Inter', sans-serif" font-size="20" font-weight="900" letter-spacing="0.5" fill="#ffffff">IWÁJÚ (3D SERIES)</text>
+    <text x="0" y="44" font-family="'Montserrat', 'Inter', sans-serif" font-size="11" font-weight="600" fill="#a1a1aa">2024 • 6 EPISODES • TV-PG</text>
+  </g>
+</svg>
